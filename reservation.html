@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Delights — Mock Reservations</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container container">
+            <a href="#" class="logo">Savory <span>Delights</span></a>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Savory Delights</h1>
+            <p>Experience our delicious dishes and cozy atmosphere. Book your table easily below!</p>
+            <a href="#reservations" class="btn">Reserve Now</a>
+        </div>
+    </section>
+
+    <section id="reservations" class="container">
+        <div class="section-title">
+            <h2>Reserve a Table</h2>
+        </div>
+
+        <div class="reservation-form">
+            <form id="reservationForm" novalidate>
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+27 82 000 0000">
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="field">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="party">Party Size</label>
+                    <select id="party" name="party" required>
+                        <option value="">Select Size</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" name="notes" placeholder="Dietary requirements, seating preference..."></textarea>
+                </div>
+                <button type="submit" class="btn">Reserve Now</button>
+            </form>
+
+            <div class="reservation-preview">
+                <h3>Reservation Details</h3>
+                <table id="previewBox">
+                    <tr><td colspan="2">Your reservation details will appear here after submission.</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@savorydelights.com</p>
+                <p>Phone: +27 82 000 0000</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">F</a>
+                    <a href="#" aria-label="Instagram">I</a>
+                    <a href="#" aria-label="Twitter">T</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Savory Delights. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

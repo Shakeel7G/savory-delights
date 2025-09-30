@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Menu | Savory Delights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fullmenu.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Savory <span>Delights</span></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="fullmenu.html" class="active">Menu</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn">Reservations</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 40vh;">
+        <div class="container hero-content animate-fade">
+            <h1>Our Full Menu</h1>
+            <p>Discover all our delicious creations in one place.</p>
+        </div>
+    </section>
+
+    <div class="menu-categories">
+        <div class="container categories-container">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="appetizers">Appetizers</button>
+            <button class="category-btn" data-category="mains">Main Courses</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+            <button class="category-btn" data-category="drinks">Drinks</button>
+        </div>
+    </div>
+
+    <section class="menu" id="full-menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Complete Menu</h2>
+                <p>All-Time Favorites</p>
+            </div>
+            
+            <div class="menu-category">
+                <h3 class="category-title">Appetizers</h3>
+                <div class="menu-items">
+                    <!-- Appetizer 1 -->
+                    <div class="menu-item animate-slide-up" data-category="appetizers">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Margherita Pizza">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Margherita Flatbread</h3>
+                            <p>Fresh tomatoes, mozzarella, and basil on crispy flatbread</p>
+                            <span class="price">R95.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Appetizer 2 -->
+                    <div class="menu-item animate-slide-up" data-category="appetizers">
+                        <div class="menu-image">
+                            <img src="./images/garlic_bread.jpg" alt="Garlic Bread">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Garlic Herb Bread</h3>
+                            <p>Freshly baked bread with garlic butter and herbs</p>
+                            <span class="price">R65.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Appetizer 3 -->
+                    <div class="menu-item animate-slide-up" data-category="appetizers">
+                        <div class="menu-image">
+                            <img src="./images/onion_soup.jpg" alt="French Onion Soup">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Classic French Onion Soup</h3>
+                            <p>Caramelized onions, melted cheese, and toasted bread</p>
+                            <span class="price">R85.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Appetizer 4 -->
+                    <div class="menu-item animate-slide-up" data-category="appetizers">
+                        <div class="menu-image">
+                            <img src="./images/tomato.jpg" alt="Bruschetta">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Tomato Bruschetta</h3>
+                            <p>Toasted bread topped with fresh tomatoes, garlic, and basil</p>
+                            <span class="price">R75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-title">Main Courses</h3>
+                <div class="menu-items">
+                    <!-- Main 1 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="./images/pasta.jpg" alt="Alfredo Pasta">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Creamy Alfredo Pasta</h3>
+                            <p>Rich cream sauce with parmesan and herbs</p>
+                            <span class="price">R165.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Main 2 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b" alt="Gourmet Burger">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Gourmet Burger</h3>
+                            <p>Premium beef patty with house-made sauces</p>
+                            <span class="price">R145.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Main 3 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="./images/salmon.jpg" alt="Grilled Salmon">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Grilled Salmon</h3>
+                            <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                            <span class="price">R245.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Main 4 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="./images/ribeye.jpg" alt="Steak">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Ribeye Steak</h3>
+                            <p>12oz ribeye with garlic mashed potatoes and grilled asparagus</p>
+                            <span class="price">R285.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Main 5 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="./images/chicken.jpg" alt="Chicken Parmesan">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Chicken Parmesan</h3>
+                            <p>Breaded chicken breast with marinara sauce and melted mozzarella</p>
+                            <span class="price">R175.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Main 6 -->
+                    <div class="menu-item animate-slide-up" data-category="mains">
+                        <div class="menu-image">
+                            <img src="./images/mushroom.jpg" alt="Vegetable Risotto">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Mushroom Risotto</h3>
+                            <p>Creamy arborio rice with wild mushrooms and parmesan</p>
+                            <span class="price">R155.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-title">Desserts</h3>
+                <div class="menu-items">
+                    <!-- Dessert 1 -->
+                    <div class="menu-item animate-slide-up" data-category="desserts">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Chocolate Cake">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Soft chocolate cake with a molten center</p>
+                            <span class="price">R95.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 2 -->
+                    <div class="menu-item animate-slide-up" data-category="desserts">
+                        <div class="menu-image">
+                            <img src="./images/cheesecake.jpg" alt="Cheesecake">
+                        </div>
+                        <div class="menu-content">
+                            <h3>New York Cheesecake</h3>
+                            <p>Creamy cheesecake with berry compote</p>
+                            <span class="price">R85.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 3 -->
+                    <div class="menu-item animate-slide-up" data-category="desserts">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" alt="Ice Cream">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Chocolate Chip Cookie</h3>
+                            <p>Soft and chewy, packed with gooey chocolate chunks and buttery sweetness.</p>
+                            <span class="price">R65.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 4 -->
+                    <div class="menu-item animate-slide-up" data-category="desserts">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1623334044303-241021148842" alt="Tiramisu">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Croissant</h3>
+                            <p>Flaky, golden, and buttery, light on the inside with a crisp, delicate crust</p>
+                            <span class="price">R90.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-title">Drinks</h3>
+                <div class="menu-items">
+                    <!-- Drink 1 -->
+                    <div class="menu-item animate-slide-up" data-category="drinks">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64" alt="Cocktail">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Signature Cocktails</h3>
+                            <p>Ask your server for our seasonal specialty cocktails</p>
+                            <span class="price">R110.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Drink 2 -->
+                    <div class="menu-item animate-slide-up" data-category="drinks">
+                        <div class="menu-image">
+                            <img src="./images/slushy.jpg" alt="Wine">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Slushy</h3>
+                            <p>Refreshing and icy, bursting with fruity flavor for a cool, energizing treat.</p>
+                            <span class="price">R85.00+</span>
+                        </div>
+                    </div>
+
+                    <!-- Drink 3 -->
+                    <div class="menu-item animate-slide-up" data-category="drinks">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Craft Beer">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Craft Beers</h3>
+                            <p>Local and imported craft beers on tap and bottled</p>
+                            <span class="price">R65.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Drink 4 -->
+                    <div class="menu-item animate-slide-up" data-category="drinks">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Specialty Coffee</h3>
+                            <p>Espresso, cappuccino, latte, and more</p>
+                            <span class="price">R45.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory Delights</h3>
+                    <p>Exceptional dining experiences crafted with passion and the finest ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 11pm - 9pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>45 Long Street</p>
+                    <p>Cape Town, South Africa</p>
+                    <p>Phone: +27 21 123 4567</p>
+                    <p>Email: info@savorydelights.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Savory Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="fullmenu.js"></script>
+</body>
+</html>
